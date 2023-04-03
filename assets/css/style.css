@@ -1,0 +1,820 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+}
+
+a {
+  color: #149ddd;
+}
+
+a:hover {
+  color: #37b3ed;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  cursor:pointer
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #362b75;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #DC3545;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #DC3545;
+}
+
+
+/* ###########  BacktoTop  ############# */
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 20px;
+  /* background: #149ddd; */
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+
+/* ###########  Side header  ############# */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  /* background: linear-gradient( 
+45deg
+ , #001c27,#001c27); */
+ background-color:#362b75;
+  box-shadow: rgb(0 0 0) 0px 0px 15px inset;
+  overflow-y: auto;
+}
+
+#header .profile h1 {
+  font-size: 24px;
+  margin: 100px 5px 20px 5px;
+  
+  padding: 0;
+  font-weight: 600;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  #header .profile h1 {
+    margin: 63px 5px 20px;
+  } 
+}
+
+#header .profile h1 a, #header .profile h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .profile .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#header .profile .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+
+#main {
+  margin-left: 300px;
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+  #main {
+    margin-left: 0;
+  }
+}
+
+/* ###########  navigation  ############# */
+
+
+.nav-menu {
+  padding-top: 25px;
+  margin: 0px 12px 0px 48px;
+
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a {
+  display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 17px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.nav-menu a i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: #6f7180;
+}
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  text-decoration: none;
+  color: #fbff00;
+}
+
+.nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
+  color: #149ddd;
+}
+.sidebarlogo{
+  width:50px;
+  margin-right:15px
+}
+@media (max-width: 720px){
+  .sidebarlogo {
+    width: 45px;
+  }
+}
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle i {
+  color: #362b75;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: #362b75;
+    border: 4px solid #362b75;
+    font-weight: 900;
+}
+
+/* ###########  Section  ############# */
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background: #fff;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+
+/* ###########  banner  ############# */
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  background: url("../img/banner.jpg") top center;
+  background-size: cover;
+}
+.bannerprofile{
+  position:absolute;
+  top:20%;
+  left:60%;
+  margin: 15px auto;
+  display: block;
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid #362b75;
+  box-shadow: 0px 0px 15px #362b75;
+  /* transform: translate(-50%,-50%); */
+
+}
+.profileheading{
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  margin: 15px auto;
+  display: block;
+  font-size: 40px;
+  font-weight: 900;
+  background-image: linear-gradient( 45deg,
+  #ffffff 16.666%, 
+  #ffffff 16.666%, 
+  #ffffff 33.333%, 
+  #ffffff 33.333%, 
+  #ffffff 50%, 
+  #000 50%, 
+  #000 66.666%, 
+  #000 66.666%, 
+  #000 83.333%, 
+  #000 83.333%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+
+}
+#hirebtn{
+  position: absolute;
+  top: 40%;
+  left: 61%;
+  font-size: 20px;
+  padding: 6px 20px;
+  background-image: linear-gradient( 
+45deg
+,#362b75,#DC3545);
+  color: white;
+  border: none;
+  outline: none;
+  font-weight: 900;
+  margin:10% 0px;
+  border-radius: 5px;
+  }
+
+  @media (max-width: 1024px) {
+    .banner{
+      width:100%;
+      height:100vh
+    }
+    .bannerprofile{
+      position: absolute;
+      top: 21%;
+      left: 55%;
+      display: block;
+      width: 150px;
+  }
+  
+    .profileheading{
+      position: absolute;
+      top: 47%;
+      left: 48%;
+      display: block;
+      font-size: 30px;
+      font-weight: 900;
+  }
+    #hirebtn{
+      position: absolute;
+      top: 43%;
+      left: 55%;
+      font-size: 19px;
+      padding: 6px 20px;
+      font-weight: 900;
+      }
+      .fa-send{
+        font-size:20px
+      }
+  }  
+@media (max-width: 720px) {
+  .banner{
+    width:100%;
+    height:50vh
+  }
+  .bannerprofile{
+    position: absolute;
+    top: 3%;
+    left: 36%;
+    display: block;
+    width: 125px;
+  }
+  .profileheading{
+    position: absolute;
+    top: 25%;
+    left: 22%;
+    display: block;
+    font-size: 25px;
+    font-weight: 900;
+    
+  }
+  #hirebtn{
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    font-size: 15px;
+    padding: 6px 20px;
+    font-weight: 900;
+    
+    }
+    .fa-send{
+      font-size:15px
+    }
+}
+
+
+/* ###########  About Me  ############# */
+
+#aboutdetails{
+  padding:5px 10px 25px 20px
+}
+#aboutdetails h4{
+  margin-bottom: 25px;
+    color: #362b75;
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+#aboutdetails p{
+  margin-bottom: 6px;
+  text-align: justify;
+}
+#personaldetails{
+  padding:5px 10px 25px 20px
+}
+#personaldetails h4{
+  margin-bottom: 25px;
+  color: #362b75;
+    font-size: 23px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+#personaldetails p{
+  margin-bottom: 6px;
+  text-align: justify;
+}
+
+.aboutimg{
+  width: 100%;
+  border-radius: 20px;
+  border: 5px solid #ffffff;
+  
+}
+#aboutme{
+  font-size: 30px;
+  font-family: initial;
+  font-weight: 600;
+  background-image: linear-gradient( 45deg,
+  #00b8fe 16.666%, 
+  #00b8fe 16.666%, 
+  #00b8fe 33.333%, 
+  #00b8fe 33.333%, 
+  #00b8fe 50%, 
+  #000000 50%, 
+  #000000 66.666%, 
+  #000 66.666%, 
+  #000 83.333%, 
+  #000000 83.333%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  margin-bottom:75px
+}
+
+
+.resumebtn{
+font-size: 20px;
+padding: 6px 20px;
+background-image: linear-gradient(
+  45deg , #000, #362b75);
+
+color: white;
+border: none;
+outline: none;
+margin:10% 0px;
+border-radius: 5px;
+}
+.resumebtn:hover{
+  background-image: linear-gradient( 
+    45deg,
+      #362b75,#000);
+}
+.social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #362b75;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  .about{
+    height:100vh
+  }
+}
+
+  
+/* ###########  Skills  ############# */
+
+@media (min-width: 1024px) {
+  .myskills{
+    height: 100vh;
+  }
+  .skills{
+    width:90%;
+    margin: 25px;
+    padding:5px
+  }
+}
+@media (min-width: 768px)
+{
+  .myskills{
+    height:100vh
+  }
+  .skills{
+    width:115%;
+    margin:20px 20px 54px 20px;
+
+  }
+}
+@media (max-width: 720px){
+  .skills{
+    width: 50%;
+    margin: 26px 48px 25px 72px;
+  }
+}
+/* ###########  Education  ############# */
+/* .resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+} */
+
+/* ###########  Certificates  ############# */
+.Certificates{
+  width:100%;
+  padding:24px;
+  margin:3px;
+  box-shadow: 0 0 20px 2px #268ab0;
+	transition: 1s;
+  
+}
+
+.Certificates:hover{
+  transform: scale(1.1);
+}
+@media (max-width: 1024px) {
+  .Certificates{
+    width: 98%;
+    padding: 8px;
+    margin: 8px;
+  }
+}
+
+/* ###########  Projects  ############# */
+
+#project{
+  width: 100%;
+  height:200px;
+  border-radius: 20px 20px 0px 0px;
+
+}
+.projects .project-item {
+  border-radius:20px;
+  border: 1px solid #eef0ef;
+  box-shadow: 0 0 20px 2px #d4d0d0;
+  margin-bottom:15px
+}
+
+.projects .project-content {
+  padding: 15px;
+}
+
+.projects .project-content h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: green;
+  margin-top: 25px;
+  text-align: center;
+}
+
+
+.projects .project-content h3 a {
+  color: #37423b;
+  transition: 0.3s;
+}
+
+.projects .project-content h3 a:hover {
+  color: darkcyan;
+}
+
+.projects .project-content p {
+  font-size: 15px;
+    margin-top: 20px;
+    color: #000;
+    text-align: justify;
+}
+
+.projects .project-content h4 {
+  font-size: 15px;
+  background: #0d0d0d;
+  padding: 7px 14px;
+  color: #fff;
+  margin: 0;
+  min-width: 150px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.projects .project-content .price {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: #37423b;
+}
+
+/* ###########  Contact  ############# */
+
+
+.contact .info {
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  border-radius: 25px;
+  background-color:#362b75;
+  box-shadow: rgb(0 0 0) 0px 0px 15px inset;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-image: initial;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #362b75;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size:15px;
+  color: #fff;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #362b75;
+  color: #fff;
+}
+
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: #362b75;
+  color: #fff;
+}
+
+.contact .contactform {
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  border-radius: 25px;
+  background-color:#362b75;
+  box-shadow: rgb(0 0 0) 0px 0px 15px inset;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-image: initial;
+}
+
+.contact .contactform .form-group {
+  padding-bottom: 8px;
+}
+
+
+.contact .contactform input, .contact .contactform textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .contactform input {
+  height: 44px;
+}
+
+.contact .contactform textarea {
+  padding: 10px 12px;
+}
+
+.contact .contactform button[type="submit"] {
+  background: #149ddd;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .contactform button[type="submit"]:hover {
+  background: #37b3ed;
+}
+.error{
+  color:#fbff00;
+  font-style: italic;
+}
+
+/* ############# Footer ############ */
+.footer{
+  background-color: #151B54;
+  font-size: 20px;
+  padding: 14px 5px 2px 5px;
+  text-align: center;
+  color:white
+}
+
+/* ################# Modal ################ */
+#modaldesign{
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  border-radius: 25px;
+  background-color:#362b75;
+  box-shadow: rgb(0 0 0) 0px 0px 15px inset;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-image: initial;
+    z-index:99999
+}
